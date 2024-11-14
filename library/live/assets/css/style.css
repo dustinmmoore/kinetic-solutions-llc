@@ -1946,13 +1946,13 @@ Google map
 }
 
 .work-title {
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   margin: 0 0 6px;
 }
 
 .work-descr {
-  color: #aaa;
+  color: #363636;
 }
 
 .work-item:hover .work-image:after {
@@ -2943,7 +2943,7 @@ Google map
   padding: 0;
   margin: 0;
   width: 100vw; /* Full width of the viewport */
-  height: 25vh; /* Full height of the viewport */
+  height: 50vh; /* Full height of the viewport */
   overflow: hidden;
 }
 
