@@ -606,8 +606,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
 
-        var mkr = new google.maps.LatLng(40.6700, -74.2000);
-        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(40.6700, -73.9400);
+        var mkr = new google.maps.LatLng(34.8331407, -82.4452326);
+        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(34.8331407, -82.4452326);
 
         function init() {
             // Basic options for a simple Google Map
@@ -834,15 +834,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 new google.maps.Point(24, 42)
             );
 
-            var marker = new google.maps.Marker({
-                position: mkr,
-                icon: image,
-                title: 'Titan',
-                infoWindow: {
-                    content: '<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
-                },
-                map: map,
-            });
+           
         }
 
     });

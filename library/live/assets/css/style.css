@@ -263,7 +263,7 @@ a,
 
 .bg-dark-60:before {
   position: absolute;
-  background: rgba(34, 34, 34, 0.8);
+  background: rgba(0, 0, 0, .5);
   content: " ";
   height: 100%;
   width: 100%;
@@ -1735,10 +1735,6 @@ Google map
   border-color: #CACACA;
 }
 
-.price-table.best {
-  margin: 0 0 30px;
-}
-
 .price-table .small {
   margin: 0;
 }
@@ -1811,11 +1807,6 @@ Google map
   padding: 7px 0;
 }
 
-.price-details li > span {
-  text-decoration: line-through;
-  color: #aaa;
-}
-
 /*--------------------------------------------------------------
 	Fun fact
 --------------------------------------------------------------*/
@@ -1847,6 +1838,7 @@ Google map
   letter-spacing: 4px;
   font-size: 30px;
   margin: 10px 0 0;
+  white-space: nowrap;
 }
 
 .video-subtitle {
@@ -2472,9 +2464,9 @@ Google map
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-  .comment .comment {
-    margin-left: 75px;
+@media (max-width: 767px) {
+  .video-title {
+    white-space: normal;
   }
 }
 
