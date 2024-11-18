@@ -1621,8 +1621,10 @@ Google map
 	Team
 --------------------------------------------------------------*/
 .team-item {
-  position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
 }
 
 .team-image {
@@ -1701,6 +1703,31 @@ Google map
   -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
   transform: translateY(50%);
+}
+
+#team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team .row {
+  width: 100%;
+}
+
+#team .team-container {
+  display: flex;
+  justify-content: center; /* Center the team items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin-top: 20px; /* Add some space between the text and the images */
+}
+
+#team .team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Add some space between the team items */
 }
 
 /*--------------------------------------------------------------
@@ -2988,4 +3015,11 @@ Google map
 
 .video-subtitle {
   font-size: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
