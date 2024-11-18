@@ -61,7 +61,7 @@
       <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span id="current-time" class="navbar-time"></span>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -77,7 +77,6 @@
         </div>
       </nav>
       <section class="home-section home-full-height" id="home" data-background="assets/images/ksmain-01.jpg">
-        
       </section>
       <div class="main">
         <section class="module" id="services">
@@ -171,32 +170,32 @@
             </div>
           </div>
           <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
-            <li class="work-item real-world-application"><a href="portfolio-single-1.html">
+            <li class="work-item real-world-application"><a href="#">
                 <div class="work-image"><img src="assets/images/rw-01.jpg" alt="real-world-application"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Real-World Application</h3>
                   <div class="work-descr">Preparing for high-pressure situations</div>
                 </div></a></li>
-            <li class="work-item skill-development"><a href="portfolio-single-1.html">
+            <li class="work-item skill-development"><a href="#">
                 <div class="work-image"><img src="assets/images/sd-01.jpg" alt="skill-development"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Skill Development</h3>
                   <div class="work-descr">Honing skills for real-world application</div>
                 </div></a></li>
-            <li class="work-item tactical-mastery"><a href="portfolio-single-1.html">
+            <li class="work-item tactical-mastery"><a href="#">
                 <div class="work-image"><img src="assets/images/card-03.jpg" alt="tactical-mastery"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Tactical-Mastery</h3>
                   <div class="work-descr">Merging discipline, speed, and situational awareness</div>
                 </div></a></li>
-            <li class="work-item practical-preparedness"><a href="portfolio-single-1.html">
+            <li class="work-item practical-preparedness"><a href="#">
                 <div class="work-image"><img src="assets/images/pp-01.jpg" alt="practical-preparedness"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Practical Preparedness</h3>
                   <div class="work-descr">Readiness for any situation</div>
                 </div></a></li>
                 <li class="work-item real-world-application">
-                  <a href="portfolio-single-1.html">
+                  <a href="#">
                     <div class="work-image">
                       <img src="assets/images/card-01.jpg" alt="Situational Awareness"/>
                     </div>
@@ -207,7 +206,7 @@
                   </a>
                 </li>
                 <li class="work-item skill-development">
-                  <a href="portfolio-single-1.html">
+                  <a href="#">
                     <div class="work-image">
                       <img src="assets/images/tm-01.jpg" alt="Confidence through Training"/>
                     </div>
@@ -229,7 +228,7 @@
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-2">
-                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html">Training Gallery</a></div>
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="#">Training Gallery</a></div>
               </div>
             </div>
           </div>
@@ -615,18 +614,5 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      function updateTime() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const seconds = now.getSeconds().toString().padStart(2, '0');
-        const currentTime = `${hours}:${minutes}:${seconds}`;
-        document.getElementById('current-time').textContent = currentTime;
-      }
-  
-      setInterval(updateTime, 1000);
-      updateTime(); // Initial call to display time immediately
-    </script>
   </body>
 </html>
