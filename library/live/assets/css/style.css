@@ -1380,19 +1380,14 @@ General Styles - Owlcarousel
 	Header
 --------------------------------------------------------------*/
 .home-section {
-  height: 100vh; /* 100% of the viewport height */
-  width: 100vw; /* 100% of the viewport width */
-  background-image: url('assets/images/ksmain-01.png');
-  background-size: cover; /* Scale the background image to cover the entire section */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  position: relative;
+  background-color: #fff;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
   z-index: 0;
-}
-
-@media (max-width: 768px) {
-  .home-section {
-    background-size: contain; /* Scale the background image to fit within the section on smaller screens */
-  }
+  background-size: cover;
 }
 
 .titan-title-size-1 {
@@ -1621,10 +1616,8 @@ Google map
 	Team
 --------------------------------------------------------------*/
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
+  position: relative;
+  text-align: center;
 }
 
 .team-image {
@@ -1703,31 +1696,6 @@ Google map
   -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
   transform: translateY(50%);
-}
-
-#team .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#team .row {
-  width: 100%;
-}
-
-#team .team-container {
-  display: flex;
-  justify-content: center; /* Center the team items horizontally */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  margin-top: 20px; /* Add some space between the text and the images */
-}
-
-#team .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
-  margin-bottom: 20px; /* Add some space between the team items */
 }
 
 /*--------------------------------------------------------------
@@ -3015,11 +2983,4 @@ Google map
 
 .video-subtitle {
   font-size: 1em;
-}
-
-.row {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
