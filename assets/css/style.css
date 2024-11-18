@@ -2984,3 +2984,28 @@ Google map
 .video-subtitle {
   font-size: 1em;
 }
+
+/* Video container to make the video responsive */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive background for reviews */
+.reviews-section {
+  background: url('path/to/your/background-image.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
