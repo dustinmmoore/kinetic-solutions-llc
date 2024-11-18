@@ -1380,19 +1380,19 @@ General Styles - Owlcarousel
 	Header
 --------------------------------------------------------------*/
 .home-section {
-  position: relative;
-  background-color: #fff;
   height: 100vh; /* 100% of the viewport height */
   width: 100vw; /* 100% of the viewport width */
   background-image: url('assets/images/ksmain-01.png');
   background-size: cover; /* Scale the background image to cover the entire section */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
   z-index: 0;
-  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    background-size: contain; /* Scale the background image to fit within the section on smaller screens */
+  }
 }
 
 .titan-title-size-1 {
