@@ -169,16 +169,6 @@ a,
   background-size: cover;
 }
 
-/* Ensure the section scales with the device */
-.module {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 /* Module header */
 .module-small {
   padding: 70px 0;
@@ -317,6 +307,13 @@ a,
 .parallax-bg {
   background-attachment: fixed;
   background-size: cover;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
 }
 
 /* Vertical margin, padding */
@@ -2081,12 +2078,6 @@ Google map
 .testimonial-descr {
   color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
-}
-
-/* Additional styles for the testimonial section */
-.testimonial {
-  padding: 20px;
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
