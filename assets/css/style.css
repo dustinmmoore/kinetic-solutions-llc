@@ -2805,8 +2805,8 @@ Google map
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     padding: 10px 25px;
   }
-  .navbar-custom .navbar-nav .open .dropdown-menu .dropdown-menu .dropdown-header,
-  .navbar-custom .navbar-nav .open .dropdown-menu .dropdown-menu > li > a {
+  .navbar-custom .dropdown-menu .dropdown-menu .dropdown-header,
+  .navbar-custom .dropdown-menu .dropdown-menu > li > a {
     padding: 10px 35px;
   }
   .navbar-custom li a,
@@ -2968,4 +2968,9 @@ section {
 
 .text-center {
   text-align: center;
+}
+
+/* Add spacing where the <br> tags were */
+.spacer {
+  height: 100px; /* Adjust the value as needed */
 }
