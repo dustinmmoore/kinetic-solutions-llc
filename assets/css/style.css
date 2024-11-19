@@ -2948,14 +2948,24 @@ section {
 /* Center and make the calendar responsive */
 .calendar-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
+.calendar-container .text-center {
+  margin-top: 100px;
+  margin-bottom: 25px; /* Add some space between the title and the iframe */
+}
+
 .calendar-container iframe {
   width: 100%;
-  max-width: 1000px;
-  height: 800px;
+  max-width: 800px;
+  height: 600px;
   border: solid 1px #777;
+  margin-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
 }
