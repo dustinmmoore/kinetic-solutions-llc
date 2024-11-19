@@ -2939,3 +2939,25 @@ Google map
     width: 100%;
   }
 }
+
+.waiver-section {
+  width: 100%;                          /* Full width of the page */
+  height: 50px;                         /* Small, thin height */
+  display: flex;                        /* Flex to center the link */
+  align-items: center;                  /* Vertically center the link */
+  justify-content: center;              /* Horizontally center the link */
+}
+
+.waiver-link {
+  color: #fff;                         /* White text color for contrast */
+  text-decoration: none;                /* Remove underline */
+  font-weight: bold;                    /* Make the link more visible */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
+  padding: 5px 15px;                    /* Padding around the text */
+  border-radius: 5px;                   /* Rounded corners for better style */
+}
+
+.waiver-link:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Lighten the background on hover */
+  color: #000;                                /* Black text on hover for contrast */
+}
