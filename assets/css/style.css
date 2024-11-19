@@ -759,6 +759,26 @@ a,
   color: #111;
 }
 
+/* Example button styles (if needed) */
+.btn-d {
+  background-color: #333; /* Adjust to match your theme */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add margin-top to lower the button */
+  margin-bottom: 25px; /* Add margin-bottom to create more space */
+}
+
+.btn-d:hover {
+  background-color: #555; /* Adjust hover color to match your theme */
+}
+
 /* Buttons size */
 .btn.btn-lg {
   padding: 12px 45px;
@@ -2972,5 +2992,5 @@ section {
 
 /* Add spacing where the <br> tags were */
 .spacer {
-  height: 100px; /* Adjust the value as needed */
+  height: 40px; /* Adjust the value as needed */
 }
