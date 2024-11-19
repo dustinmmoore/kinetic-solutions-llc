@@ -309,7 +309,7 @@ a,
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 /* Media query for mobile devices */
@@ -2940,24 +2940,22 @@ Google map
   }
 }
 
-.waiver-section {
-  width: 100%;                          /* Full width of the page */
-  height: 50px;                         /* Small, thin height */
-  display: flex;                        /* Flex to center the link */
-  align-items: center;                  /* Vertically center the link */
-  justify-content: center;              /* Horizontally center the link */
+/* Ensure 20px spacing between sections */
+section {
+  margin-bottom: 20px;
 }
 
-.waiver-link {
-  color: #fff;                         /* White text color for contrast */
-  text-decoration: none;                /* Remove underline */
-  font-weight: bold;                    /* Make the link more visible */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
-  padding: 5px 15px;                    /* Padding around the text */
-  border-radius: 5px;                   /* Rounded corners for better style */
+/* Center and make the calendar responsive */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.waiver-link:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Lighten the background on hover */
-  color: #000;                                /* Black text on hover for contrast */
+.calendar-container iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+  border: solid 1px #777;
 }
