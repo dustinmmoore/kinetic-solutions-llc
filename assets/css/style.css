@@ -1375,21 +1375,6 @@ General Styles - Owlcarousel
   padding: 15px 10px;
   display: inline-block;
 }
-
-/* Example CSS for additional customization */
-.navbar-nav > li > a {
-  color: #fff; /* Link color */
-  padding: 15px 20px; /* Link padding */
-  text-transform: uppercase; /* Uppercase text */
-  font-weight: bold; /* Bold text */
-}
-
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-  background-color: #555; /* Background color on hover/focus */
-  color: #fff; /* Text color on hover/focus */
-}
-
 /* Navbar search
 
 .dropdown-search {
