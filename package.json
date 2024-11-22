@@ -1,22 +1,13 @@
 {
-  "name": "titan",
+  "name": "kinetic-solutions-llc", 
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for Kinetic Solutions LLC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "gh-pages -d live"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/technext/titan.git"
-  },
-  "author": "",
+  "author": "Kinetic Solutions LLC",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/technext/titan/issues"
-  },
-  "homepage": "https://github.com/technext/titan#readme",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }

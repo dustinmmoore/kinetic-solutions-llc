@@ -1,0 +1,76 @@
+
+/* Make images responsive */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive containers */
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    .navbar-custom {
+        padding: 10px 0;
+    }
+    
+    .navbar-custom .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+/* Responsive sections */
+@media (max-width: 768px) {
+    .module {
+        padding: 50px 0;
+    }
+    
+    .module-small {
+        padding: 30px 0;
+    }
+}
+
+/* Gallery/Portfolio grid responsiveness */
+@media (max-width: 768px) {
+    .work-item {
+        width: 100%;
+    }
+    
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+/* Team section responsiveness */
+@media (max-width: 768px) {
+    .team-container {
+        text-align: center;
+    }
+    
+    .team-item {
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+}

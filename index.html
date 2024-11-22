@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--  
     Document Title
     =============================================
@@ -162,32 +163,32 @@
           </div>
           <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
             <li class="work-item real-world-application">
-                <div class="work-image"><img src="assets/images/rw-01.jpg" alt="real-world-application"/></div>
+                <div class="work-image"><img src="assets/images/rw-01.jpg" class="img-responsive" alt="real-world-application"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Real-World Application</h3>
                   <div class="work-descr">Preparing for high-pressure situations</div>
                 </div></a></li>
             <li class="work-item skill-development">
-                <div class="work-image"><img src="assets/images/sd-01.jpg" alt="skill-development"/></div>
+                <div class="work-image"><img src="assets/images/sd-01.jpg" class="img-responsive" alt="skill-development"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Skill Development</h3>
                   <div class="work-descr">Honing skills for real-world application</div>
                 </div></a></li>
             <li class="work-item tactical-mastery">
-                <div class="work-image"><img src="assets/images/card-03.jpg" alt="tactical-mastery"/></div>
+                <div class="work-image"><img src="assets/images/card-03.jpg" class="img-responsive" alt="tactical-mastery"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Tactical-Mastery</h3>
                   <div class="work-descr">Merging discipline, speed, and situational awareness</div>
                 </div></a></li>
             <li class="work-item practical-preparedness">
-                <div class="work-image"><img src="assets/images/pp-01.jpg" alt="practical-preparedness"/></div>
+                <div class="work-image"><img src="assets/images/pp-01.jpg" class="img-responsive" alt="practical-preparedness"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Practical Preparedness</h3>
                   <div class="work-descr">Readiness for any situation</div>
                 </div></a></li>
                 <li class="work-item real-world-application">
                     <div class="work-image">
-                      <img src="assets/images/card-01.jpg" alt="Situational Awareness"/>
+                      <img src="assets/images/card-01.jpg" class="img-responsive" alt="Situational Awareness"/>
                     </div>
                     <div class="work-caption font-alt">
                       <h3 class="work-title">Situational Awareness</h3>
@@ -197,7 +198,7 @@
                 </li>
                 <li class="work-item skill-development">
                     <div class="work-image">
-                      <img src="assets/images/tm-01.jpg" alt="Confidence through Training"/>
+                      <img src="assets/images/tm-01.jpg" class="img-responsive" alt="Confidence through Training"/>
                     </div>
                     <div class="work-caption font-alt">
                       <h3 class="work-title">Confidence through Training</h3>
@@ -254,7 +255,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                <div class="alt-services-image align-center"><img src="assets/images/ks-promo.jpg" alt="Feature Image"></div>
+                <div class="alt-services-image align-center"><img src="assets/images/ks-promo.jpg" class="img-responsive" alt="Feature Image"></div>
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="alt-features-item">
@@ -292,7 +293,7 @@
             <div class="row justify-content-center team-container">
               <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/dustbio.png" alt="Member Photo"/>
+                  <div class="team-image"><img src="assets/images/dustbio.png" class="img-responsive" alt="Member Photo"/>
                     <div class="team-detail">
                       <h5 class="font-alt">Dustin</h5>
                       <p class="font-serif">With years of operational combat experience, I’m here to make sure you get practical, no-bullshit training that builds real skills and unshakable confidence. Let’s get you ready to tackle whatever comes your way.</p>
@@ -307,7 +308,7 @@
               </div>
               <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/sambio.png" alt="Member Photo"/>
+                  <div class="team-image"><img src="assets/images/sambio.png" class="img-responsive" alt="Member Photo"/>
                     <div class="team-detail">
                       <h5 class="font-alt">Samantha</h5>
                       <p class="font-serif">Samantha is the innovative force behind the merch at Kinetic Solutions LLC. With a keen eye for design and a passion for branding, Samantha is responsible for creating and distributing the company’s promotional materials.</p>
@@ -324,7 +325,7 @@
           </div>
         </section>
         <section class="module bg-dark-60" data-background="assets/images/card-05.jpg">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
                 <h2 class="module-title font-alt">Training Tracker</h2>
@@ -518,5 +519,15 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Ensure page starts at home section on refresh
+      window.onload = function() {
+        window.scrollTo(0, 0);
+      };
+      // Alternative solution if needed
+      if (window.history.scrollRestoration) {
+        window.history.scrollRestoration = 'manual';
+      }
+    </script>
   </body>
 </html>
