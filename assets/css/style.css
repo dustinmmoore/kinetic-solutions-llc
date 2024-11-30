@@ -7,16 +7,40 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+/* Modernize variables */
+:root {
+  /* Colors */
+  --primary-color: #111;
+  --secondary-color: #666;
+  --background-color: #fff;
+  --link-color: #111;
+  --link-hover-color: #aaa;
+  
+  /* Typography */
+  --body-font: "Open Sans", sans-serif;
+  --heading-font: "Roboto Condensed", sans-serif;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
-  color: #666;
+  font: 400 12px/1.8 var(--body-font);
+  color: var(--secondary-color);
   -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link-color);
+  transition: color var(--transition-speed) ease-in-out;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 iframe {
@@ -890,12 +914,12 @@ a,
 	Typography
 --------------------------------------------------------------*/
 a {
-  color: #111;
+  color: var(--link-color);
 }
 
 a:hover, a:focus {
   text-decoration: none;
-  color: #aaa;
+  color: var(--link-hover-color);
   outline: 0;
 }
 
@@ -3007,4 +3031,14 @@ section {
 /* Add spacing where the <br> tags were */
 .spacer {
   height: 40px; /* Adjust the value as needed */
+}
+
+/* Add modern responsive features */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
