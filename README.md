@@ -2,6 +2,8 @@
 
 Professional single-page website built with modern web technologies.
 
+![Kinetic Solutions LLC Website Preview](assets/images/ksmain-01.jpg)
+
 ## Quick Start
 
 ```bash
